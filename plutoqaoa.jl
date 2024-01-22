@@ -70,6 +70,9 @@ nodelabel = 1:nv(graph)
 gplot(graph,layout = spring_layout, nodelabel = nodelabel, nodefillc = "lightblue")
 end
 
+# ╔═╡ f6e59b5f-ca18-4ee9-a454-9f194b417cae
+
+
 # ╔═╡ d151e252-f352-4113-9d43-8b5ed03c0a11
 md"$H_C =  \sum_{\langle i,j \rangle} \frac{w_{i,j}}{2}(1 - \sigma^z_i \sigma^z_j)$
 
@@ -101,7 +104,11 @@ end
 end
 
 
->>>>>>> 1ca3bba27af7bc38a1161247042e6c6e97144108
+# ╔═╡ 1c469546-12cd-49ee-886a-df66dee94550
+begin
+H_c = ob_func(edge_data)
+H_mix = mix_func(num_vertices)
+end
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -1891,12 +1898,9 @@ version = "1.4.1+1"
 # ╠═ad7d7db3-458f-47c4-8f5b-cfa1e4ca4dfb
 # ╠═cb9ed946-899a-4935-87b2-5bff8667905c
 # ╠═7da4b938-6698-4ef5-990b-c9b93884b365
+# ╠═f6e59b5f-ca18-4ee9-a454-9f194b417cae
 # ╠═d151e252-f352-4113-9d43-8b5ed03c0a11
 # ╠═71421353-faf3-4635-877b-24ed4ea4ce53
-<<<<<<< HEAD
-# ╠═e7a254fb-2871-4ee2-b46a-e0329276b8ca
-=======
-# ╠═3fb68828-7300-4887-ae18-bbcbad241c71
->>>>>>> 1ca3bba27af7bc38a1161247042e6c6e97144108
+# ╠═1c469546-12cd-49ee-886a-df66dee94550
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
