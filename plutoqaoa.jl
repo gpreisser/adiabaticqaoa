@@ -114,6 +114,7 @@ end
 md"Next steps
 - Incorporate Adiabatic Gauge Potential
 - First simple adiabatic
+- Write (parametrized) initial states
 - Calculate expectation values
 - See how to do optimization"
 
