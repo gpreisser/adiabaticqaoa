@@ -110,6 +110,29 @@ H_c = ob_func(edge_data)
 H_mix = mix_func(num_vertices)
 end
 
+# ╔═╡ 3fcc52f3-02d9-4cad-ba8e-043b52e2b13f
+md"Next steps
+- Incorporate Adiabatic Gauge Potential
+- First simple adiabatic"
+
+# ╔═╡ 29170a5e-915a-4c11-8006-704725607d62
+md"$H(\lambda) = (1-\lambda)H_i + \lambda H_f + \dot{\lambda}A(\lambda)$
+$H_{
+\text{temp}
+} = (1 - \lambda)H_i + \lambda H_f$"
+
+# ╔═╡ ac9fd402-0be5-4dfe-82f5-e0edee9461aa
+begin
+T = 1.0;
+lambda(t) = (sin(pi*t/2*T))^2
+end
+
+# ╔═╡ d707868e-c542-4090-bd29-5da8ac12bab2
+md"We will start with H_temp"
+
+# ╔═╡ 32252129-99bc-4665-9abf-e6f8e4418edc
+Htmp(t) = (1-lambda(t))H_mix + lambda(t)H_c
+
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
@@ -1902,5 +1925,10 @@ version = "1.4.1+1"
 # ╠═d151e252-f352-4113-9d43-8b5ed03c0a11
 # ╠═71421353-faf3-4635-877b-24ed4ea4ce53
 # ╠═1c469546-12cd-49ee-886a-df66dee94550
+# ╠═3fcc52f3-02d9-4cad-ba8e-043b52e2b13f
+# ╠═29170a5e-915a-4c11-8006-704725607d62
+# ╠═ac9fd402-0be5-4dfe-82f5-e0edee9461aa
+# ╟─d707868e-c542-4090-bd29-5da8ac12bab2
+# ╠═32252129-99bc-4665-9abf-e6f8e4418edc
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
