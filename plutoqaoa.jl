@@ -113,7 +113,9 @@ end
 # ╔═╡ 3fcc52f3-02d9-4cad-ba8e-043b52e2b13f
 md"Next steps
 - Incorporate Adiabatic Gauge Potential
-- First simple adiabatic"
+- First simple adiabatic
+- Calculate expectation values
+- See how to do optimization"
 
 # ╔═╡ 29170a5e-915a-4c11-8006-704725607d62
 md"$H(\lambda) = (1-\lambda)H_i + \lambda H_f + \dot{\lambda}A(\lambda)$
